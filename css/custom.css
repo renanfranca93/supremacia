@@ -1,0 +1,64 @@
+.mini{
+    font-size: 10px;
+    position: relative;
+    bottom: -80px;
+}
+
+.all{
+    background-image: url('../img/bg.jpg');
+}
+
+.container{
+    margin-top: 20px;
+}
+
+.hex{
+    color: white !important;
+}
+
+.blue{
+    color: blue !important;
+}
+
+.red{
+    color: red !important;
+}
+
+.hex a:link{
+    color: white !important;
+}
+
+.fog{
+    background-color: grey !important;
+}
+.whiteBg{
+    background-color:rgba(0, 0, 0, 0) !important;
+    color: black !important;
+}
+.triTile{
+    background-image: url('../img/tritile.png') ;
+}
+
+.field{
+    background-image: url('../img/field.png') ;
+}
+
+.rock{
+    background-image: url('../img/rock.png') ;
+}
+
+.mountain{
+    background-image: url('../img/mountain.png') ;
+}
+
+.forest{
+    background-image: url('../img/forest.png') ;
+}
+
+.water{
+    background-image: url('../img/water.png') ;
+}
+
+.town{
+    background-image: url('../img/town.png') ;
+}

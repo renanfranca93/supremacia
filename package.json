@@ -1,0 +1,6 @@
+{
+    "scripts": {
+    "test" : "bla bla bla",
+    "sass": "node-sass sass/ -o css/"
+ }
+}
