@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14-Jul-2021 às 18:15
+-- Tempo de geração: 02-Set-2021 às 13:40
 -- Versão do servidor: 10.4.19-MariaDB
 -- versão do PHP: 7.4.20
 
@@ -49,7 +49,10 @@ INSERT INTO `session` (`id`, `tiles`, `status`, `food1`, `wood1`, `stone1`, `foo
 (6, 'field,rock,field,mountain,water,field,rock,forest,forest,forest,field,forest,rock,mountain,mountain,forest,field,field,rock,field,field,rock,rock,forest,field,water,field,water,field,field,rock,forest,forest,field,town,triTile,town', 1, 21, 8, 21, 0, 0, 0, 7, 3),
 (7, 'rock,field,field,rock,forest,rock,mountain,field,forest,forest,field,field,water,field,field,forest,field,forest,field,field,field,forest,mountain,field,rock,rock,rock,forest,forest,water,field,rock,mountain,water,town,triTile,town', 1, 0, 0, 0, 0, 0, 0, NULL, NULL),
 (8, 'field,field,forest,forest,rock,forest,field,field,field,field,field,field,rock,mountain,rock,rock,forest,field,rock,water,field,field,forest,rock,rock,field,forest,water,forest,water,mountain,forest,mountain,field,town,triTile,town', 1, 0, 0, 0, 0, 0, 0, NULL, NULL),
-(9, 'field,forest,water,field,forest,field,field,field,forest,rock,field,mountain,rock,rock,forest,forest,field,field,rock,forest,mountain,field,forest,rock,field,water,forest,field,mountain,field,rock,water,rock,field,town,triTile,town', 1, 2, 3, 2, 0, 0, 0, 2, NULL);
+(9, 'field,forest,water,field,forest,field,field,field,forest,rock,field,mountain,rock,rock,forest,forest,field,field,rock,forest,mountain,field,forest,rock,field,water,forest,field,mountain,field,rock,water,rock,field,town,triTile,town', 1, 2, 3, 2, 0, 0, 0, 2, NULL),
+(10, 'forest,rock,forest,mountain,rock,field,water,rock,field,field,water,field,field,mountain,field,field,forest,forest,field,forest,field,water,rock,field,mountain,rock,forest,forest,field,field,rock,rock,field,forest,town,triTile,town', 1, 4, 2, 4, 0, 0, 0, 2, 3),
+(11, 'forest,rock,forest,mountain,rock,field,field,forest,water,field,rock,field,field,water,field,field,forest,rock,mountain,field,rock,field,forest,water,field,field,field,rock,forest,forest,rock,field,mountain,forest,town,triTile,town', 1, 0, 1, 0, 0, 0, 0, 2, NULL),
+(12, 'rock,water,water,field,field,forest,rock,rock,mountain,mountain,field,rock,forest,field,rock,forest,field,water,forest,field,forest,rock,field,field,field,forest,rock,forest,mountain,field,forest,field,field,field,town,triTile,town', 1, 0, 0, 0, 0, 0, 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -101,7 +104,25 @@ INSERT INTO `tiles` (`id`, `id_session`, `tile`, `player1`, `player2`, `build`) 
 (93, 9, 37, NULL, 3, NULL),
 (94, 9, 4, 1, NULL, NULL),
 (95, 9, 10, 1, NULL, NULL),
-(96, 9, 5, 1, NULL, NULL);
+(96, 9, 5, 1, NULL, NULL),
+(97, 10, 35, 0, NULL, NULL),
+(98, 10, 36, NULL, NULL, NULL),
+(99, 10, 37, NULL, 3, NULL),
+(100, 10, 1, 0, NULL, 1),
+(101, 10, 4, 0, NULL, NULL),
+(102, 10, 3, NULL, NULL, NULL),
+(103, 10, 1, 1, 2, NULL),
+(104, 10, 10, 1, NULL, NULL),
+(105, 10, 8, 1, NULL, NULL),
+(106, 10, 1, NULL, NULL, NULL),
+(107, 11, 35, 2, NULL, NULL),
+(108, 11, 36, NULL, NULL, NULL),
+(109, 11, 37, NULL, 3, NULL),
+(110, 11, 1, 1, NULL, NULL),
+(111, 11, 4, NULL, NULL, NULL),
+(112, 12, 35, 3, NULL, NULL),
+(113, 12, 36, NULL, NULL, NULL),
+(114, 12, 37, NULL, 3, NULL);
 
 --
 -- Índices para tabelas despejadas
@@ -127,13 +148,13 @@ ALTER TABLE `tiles`
 -- AUTO_INCREMENT de tabela `session`
 --
 ALTER TABLE `session`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de tabela `tiles`
 --
 ALTER TABLE `tiles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
